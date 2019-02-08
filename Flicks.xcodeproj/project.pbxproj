@@ -19,6 +19,8 @@
 		ECC52AE121FFD68A000E4348 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC52AE021FFD68A000E4348 /* MoviesViewController.swift */; };
 		ECC52AE321FFDE7B000E4348 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC52AE221FFDE7B000E4348 /* MovieCell.swift */; };
 		ECCA5078220A00EA008A16D1 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA5077220A00EA008A16D1 /* MovieDetailsViewController.swift */; };
+		ECCA507A220D39F6008A16D1 /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA5079220D39F6008A16D1 /* MovieGridViewController.swift */; };
+		ECCA507E220D3E80008A16D1 /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCA507D220D3E80008A16D1 /* MovieGridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		ECC52AE021FFD68A000E4348 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		ECC52AE221FFDE7B000E4348 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		ECCA5077220A00EA008A16D1 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		ECCA5079220D39F6008A16D1 /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		ECCA507D220D3E80008A16D1 /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 				ECC52AE021FFD68A000E4348 /* MoviesViewController.swift */,
 				ECC52AE221FFDE7B000E4348 /* MovieCell.swift */,
 				ECCA5077220A00EA008A16D1 /* MovieDetailsViewController.swift */,
+				ECCA5079220D39F6008A16D1 /* MovieGridViewController.swift */,
+				ECCA507D220D3E80008A16D1 /* MovieGridCell.swift */,
 			);
 			path = Flicks;
 			sourceTree = "<group>";
@@ -403,9 +409,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCA507A220D39F6008A16D1 /* MovieGridViewController.swift in Sources */,
 				ECCA5078220A00EA008A16D1 /* MovieDetailsViewController.swift in Sources */,
 				ECC52AB321FFD46E000E4348 /* AppDelegate.swift in Sources */,
 				ECC52AE121FFD68A000E4348 /* MoviesViewController.swift in Sources */,
+				ECCA507E220D3E80008A16D1 /* MovieGridCell.swift in Sources */,
 				ECC52AE321FFDE7B000E4348 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
