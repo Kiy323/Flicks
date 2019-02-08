@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="-658" y="-909"/>
         </scene>
-        <!--Movie Grid View Controller-->
+        <!--SuperHero-->
         <scene sceneID="Rxj-A8-cSy">
             <objects>
-                <viewController id="rx6-H7-t0J" customClass="MovieGridViewController" customModule="Flicks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rx6-H7-t0J" userLabel="SuperHero" customClass="MovieGridViewController" customModule="Flicks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qf5-f1-XFx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,27 +167,30 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hci-a8-C8z">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0Nt-BA-0uQ">
-                                    <size key="itemSize" width="173" height="228"/>
+                                    <size key="itemSize" width="164" height="238"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieGridCell" id="jjI-0G-4mY" customClass="MovieGridCell" customModule="Flicks" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="173" height="228"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="238"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="173" height="228"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="164" height="238"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hU-ub-MXN">
-                                                    <rect key="frame" x="0.0" y="0.0" width="173" height="228"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hU-ub-MXN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="164" height="238"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="posterView" destination="6hU-ub-MXN" id="Eaz-Se-hpJ"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -196,6 +199,9 @@
                         <viewLayoutGuide key="safeArea" id="ACP-bP-IQj"/>
                     </view>
                     <navigationItem key="navigationItem" id="1nT-A3-x5M"/>
+                    <connections>
+                        <outlet property="collectionView" destination="hci-a8-C8z" id="R4M-bm-Jbi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JDD-uW-qPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
